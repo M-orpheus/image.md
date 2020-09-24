@@ -1,0 +1,32 @@
+<html><head><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vditor@latest/dist/index.css"/>
+<script src="https://cdn.jsdelivr.net/npm/vditor@latest/dist/method.min.js"></script></head>
+<body><div class="vditor-reset" id="preview"><p id="20200924191157-g8dq6gq">一个系综的配分函数实际上就是矩母函数。</p>
+<p id="20200924191157-u6gzjyl">利用等权假设给定概率测度为均匀分布，i.e. <img src="https://www.zhihu.com/equation?tex=P%28d+\omega%29+%3D+\frac%7Bd+\omega%7D%7B%7C\Lambda_n%7C%7D" alt="[公式]" /></p>
+<p id="20200924191157-1cac7pw">以无相互作用系统为例，取随机变量为总能量</p>
+<p id="20200924191157-aonh4w7"><img src="https://www.zhihu.com/equation?tex=\begin%7Bsplit%7D+H_n%3A+%26+\Omega+\rightarrow+%5B0%2C+%2B\infty%29\\+%26+\omega+\mapsto+\sum_%7Bi%3D1%7D%5En+\epsilon%28\omega_i%29+\end%7Bsplit%7D" alt="[公式]" /></p>
+<p id="20200924191157-i5ut96r">则有</p>
+<p id="20200924191157-tv5xvmy"><img src="https://www.zhihu.com/equation?tex=P%28H_n\in+du%29+%3D+\int_%7B\%7B\omega%7CH_n%28\omega%29+\in+%5Bu+%2B+du%29\%7D%7D+P%28d\omega%29" alt="[公式]" /></p>
+<p id="20200924191157-1epscj4">因此，正则配分函数</p>
+<p id="20200924191157-p63vi9m"><img src="https://www.zhihu.com/equation?tex=\begin%7Bsplit%7D+Z_n%28\beta%29+%26+%3D+\int_0%5E%7B%2B\infty%7Dg%28u%29+e%5E%7B-\beta+u%7D+\frac%7Bdu%7D%7B%7C\Lambda_u%7C%7D+\\+%26+%3D+\int_0%5E%7B%2B\infty%7D+e%5E%7B-\beta+u%7D+P%28H_n+\in+du%29+\\+%26+%3D+\int_0%5E%7B%2B\infty%7D+e%5E%7B-\beta+u%7D\int_%7B\%7B\omega%7CH_n%28\omega%29+\in+%5Bu+%2B+du%29\%7D%7D+P%28d\omega%29+\\+%26+%3D+\int_%7B\Lambda_n%7De%5E%7B-\beta+H_n%28\omega%29%7DP%28d\omega%29+\\+%26+%3D+M_%7BH_n%7D%28-\beta%29+\end%7Bsplit%7D" alt="[公式]" /></p>
+<p id="20200924191157-dmfcxa2">也就是矩母函数在 <img src="https://www.zhihu.com/equation?tex=-\beta" alt="[公式]" /> 处的值。矩母函数有什么好处概率论里都有啦，统计物理里可以拿它来生成各种热力学量和求能量的均值、方差。</p>
+<p id="20200924191157-mftag4h">比如 <img src="https://www.zhihu.com/equation?tex=\langle+u+\rangle+%3D+-+\frac%7B\partial+\ln+Z_n%28\beta%29%7D%7B\partial+\beta%7D+%3D+-+n+\frac%7B\partial+\frac%7B1%7D%7Bn%7D+\ln+Z_n%28\beta%29%7D%7B\partial+\beta%7D" alt="[公式]" /> ，i.e. 但粒子能量的样本均值 <img src="https://www.zhihu.com/equation?tex=\langle+\frac%7Bu%7D%7Bn%7D+\rangle+%3D+-+\frac%7B\partial+\frac%7B1%7D%7Bn%7D+\ln+Z_n%28\beta%29%7D%7B\partial+\beta%7D" alt="[公式]" /></p>
+<p id="20200924191157-q92jmtn">定义单粒子配分函数的对数为 <img src="https://www.zhihu.com/equation?tex=\phi%28\beta%29+%3D+-+\lim_%7Bn\rightarrow+%2B\infty%7D\frac%7B1%7D%7Bn%7D\ln+Z_n%28\beta%29" alt="[公式]" /> ，上面的式子令 <img src="https://www.zhihu.com/equation?tex=n+\rightarrow+%2B\infty" alt="[公式]" /> ， <img src="https://www.zhihu.com/equation?tex=\langle+u\rangle+%3D+\frac%7B\partial+\phi%28\beta%29%7D%7B\partial+\beta%7D" alt="[公式]" /></p>
+<p id="20200924191157-w82ztw3">其Lengendre-Fenchel变换为 <img src="https://www.zhihu.com/equation?tex=s%28u%29+%3D+\inf_\beta+%28\beta+u+-+\phi%28\beta%29%29" alt="[公式]" />，因此 <img src="https://www.zhihu.com/equation?tex=s%28u%29+%3D+\beta+u+-+\phi%28\beta%29" alt="[公式]" /> ， <img src="https://www.zhihu.com/equation?tex=\beta" alt="[公式]" /> 满足 <img src="https://www.zhihu.com/equation?tex=u+%3D+\frac%7B\partial+\phi%28\beta%29%7D%7B\partial+\beta%7D" alt="[公式]" /> ，从 <img src="https://www.zhihu.com/equation?tex=\phi%28\beta%29" alt="[公式]" /> 的定义，结合统计物理里的结论可以知道，自由能 <img src="https://www.zhihu.com/equation?tex=F+%3D+\frac%7B\phi%28\beta%29%7D%7B\beta%7D" alt="[公式]" /> ，根据单粒子能量均值的表达式，记宏观能量为 <img src="http://127.0.0.1:6807/webdav/vvg42cp/Doc//assets/kl5tm4l.svg" alt="[公式]" /> ，有 <img src="https://www.zhihu.com/equation?tex=F+%3D+E+-+\frac%7BS%7D%7B\beta%7D" alt="[公式]" /> ，所以，通过Lengendre-Fenchel变换得到的 <img src="http://127.0.0.1:6807/webdav/vvg42cp/Doc//assets/8ipmeqo.svg" alt="[公式]" /> 是熵函数，如果熵函数是严格凹函数，Lengendre-Fenchel变换可逆，有Legendre对偶，因此，微正则系综和正则系综是等价的。可以通过渐进性证明能量的样本均值依概率收敛到平均能量 <img src="https://www.zhihu.com/equation?tex=\lim_%7Bn+\rightarrow+%2B\infty%7D+P%28h_n+\in+du%29+%3D+1" alt="[公式]" /> ，并且平均能量 <img src="https://www.zhihu.com/equation?tex=u+%3D+\arg\max_u+s%28u%29" alt="[公式]" /></p>
+<p id="20200924191145-016mk2y">其他广义系综同理，在构造概率测度的时候变一下形式就可以</p>
+</div>
+<script>
+    const previewElement = document.getElementById('preview')
+    Vditor.setContentTheme('light', 'http://127.0.0.1:6806/assets/vditor/dist/css/content-theme');
+    Vditor.codeRender(previewElement, 'zh_CN');
+    Vditor.highlightRender({"enable":true,"lineNumber":false,"style":"github"}, previewElement, 'http://127.0.0.1:6806/assets/vditor');
+    Vditor.mathRender(previewElement, {
+        cdn: 'http://127.0.0.1:6806/assets/vditor',
+        math: {"engine":"MathJax","inlineDigit":false,"macros":{}},
+    });
+    Vditor.mermaidRender(previewElement, ".language-mermaid", 'http://127.0.0.1:6806/assets/vditor');
+    Vditor.graphvizRender(previewElement, 'http://127.0.0.1:6806/assets/vditor');
+    Vditor.chartRender(previewElement, 'http://127.0.0.1:6806/assets/vditor');
+    Vditor.mindmapRender(previewElement, 'http://127.0.0.1:6806/assets/vditor');
+    Vditor.abcRender(previewElement, 'http://127.0.0.1:6806/assets/vditor');
+    Vditor.mediaRender(previewElement);
+</script></body></html>
